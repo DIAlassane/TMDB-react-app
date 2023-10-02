@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------ --------------------- NAVBAR ---------------------- ---------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 10vh;
+    padding-top: 1rem;
+    background-color: yellow;
+}
+
+.navbar a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.navbar a span {
+    font-weight: 100;
+    color: #00000067;
+}
+
+.dropdown-row {
+    color: brown;
+}
+
+.recherche {
+    width: 40%;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recherche input {
+    width: 100%;
+    height: 4vh;
+    font: 1rem;
+    border: 0.3px solid black;
+    border-radius: 6px;
+}
+
+
+/*------------ --------------------- CARD ---------------------- ---------------*/
+
+.global {
+    display: flex;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.card img {
+   width: 350px;
+   height: 55vh;
+}
+
+.details {
+    width: 100%;
+    height: 3.6vh;
+    background-color: rgba(160, 160, 113, 0.426);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+.details:hover {
+    overflow: initial;
+    height: 54vh;
+}
+
+.details h4 {
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+.date-desc p {
+    font-size: 0.7rem;
+}
+
+.desc span {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.desc p {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.backdrop {
+    width: 175px;
+    height: 125px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.carre {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+/*------------ --------------------- MAIN ---------------------- ---------------*/
+.films {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.films h2 {
+    justify-content: left;
+    text-align: left;
+    margin-left: 2rem;
+    color: white;
+    font-weight: 700;
+    padding: 1rem;
+}
