@@ -26,7 +26,7 @@ const Home = () => {
     }
 
   return (
-    <div>
+    <div className='globalise'>
         <form className='recherche' action="">
                 <input type="text" 
                 placeholder='Recherche ...'
@@ -56,13 +56,15 @@ const Home = () => {
                     ? list
                     : list.title.includes(search)
                 }).map((list) => {
-                    return (       
-                        <MovieBox list={list} />                      
+                    return (    
+                        <div>
+                            <MovieBox list={list} />
+                        </div>   
+                                             
                     )
                 })
             }
                     </div>
-                    
                 </div>
             <Pager page={page} setPage={setPage}/>
         

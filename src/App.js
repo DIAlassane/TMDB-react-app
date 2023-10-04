@@ -2,7 +2,7 @@ import { BrowserRouter,Route,  Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import MovieDetails from './components/MovieDetails';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path='*' element={<Home />}></Route>
-        <Route path='/movie/id' element={<MovieDetails />}></Route>
       </Routes>
+    <Footer />
     </BrowserRouter>
   );
 }

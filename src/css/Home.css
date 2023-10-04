@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0.5rem;
+    width: 95%;
+    margin-left: 2.5%;
 }
 
 .dropdown-row {
@@ -27,4 +29,24 @@
     font: 1rem;
     border: 0.3px solid black;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 390px) {
+    .recherche {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .globalise {
+        width: 100%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5rem;
+        width: 35%;
+        margin-left: 23.5%;
+    }
+    
 }

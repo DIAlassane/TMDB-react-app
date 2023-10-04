@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../App.css'
 import { Modal,show,Button} from 'react-bootstrap'
 
 const MovieBox = ({list}) => {
     const [show, setShow]=useState(false);
-
     const handleShow=()=>setShow(true);
     const handleClose=()=>setShow(false);
 
@@ -29,6 +28,7 @@ const MovieBox = ({list}) => {
             <br></br>
             <h6>Description :</h6>
             <p>{list.overview}</p>
+            <p>Acteurs : {list && list.actors}</p>
         
             </Modal.Body>
             <Modal.Footer>

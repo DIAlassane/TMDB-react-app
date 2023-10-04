@@ -34,8 +34,8 @@
 .pagination {
     cursor: pointer;
     display: inline-block;
-    margin: 1em 0;
-    margin-left: 18em;
+    width: 40%;
+    margin-left: 30%;
 }
 
 .pagination a {
@@ -56,6 +56,18 @@
 }
 
 /* MovieBox */
+
+.footer {
+    justify-content: center;
+    text-align: center;
+    background-color: brown;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+}
 
 .movie-box {
     cursor: pointer;
@@ -86,4 +98,32 @@
 
 button {
     margin-top: 0;
+}
+
+@media screen and (max-width: 390px) {
+    .pagination {
+        margin-left: 10%;
+    }
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 4px 8px;
+        text-decoration: none;
+        transition: background-color 0.6s;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+        background-color: brown;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .footer h1 {
+        font-size: 1rem;
+
+    }
+    
 }
