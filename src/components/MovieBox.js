@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import '../App.css'
-import { Modal,show,Button} from 'react-bootstrap'
+import { Modal,Button} from 'react-bootstrap'
 
 const MovieBox = ({list}) => {
     const [show, setShow]=useState(false);

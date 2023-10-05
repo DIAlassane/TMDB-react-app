@@ -5,22 +5,24 @@ import MovieBox from '../components/MovieBox'
 import '../css/Home.css'
 import Pager from '../components/Pager'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { API_URL,API_KEY } from '../api'
 
 const Home = () => {
+    // state de notre application - etat de notre app donc rendu initial
     const [list, setList] = useState()
     let [page, setPage] = useState(1)
     const [search, setSearch] = useState()
 
+    // Code a executer apres le rendu ou maj de l'etat
     useEffect(() => {
-        axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=ceb50c2809a3dc3e85025e306e2a2cde&language=fr-FR&page=${page}`)
+        axios.get(`${API_URL}?api_key=${API_KEY}cde&language=fr-FR&page=${page}`)
         .then(({data}) => setList(data.results))
         .catch((err) => console.log(err))
-    }, [page])
-
+    }, [page]) // tableau de dependance
+// Evenement - pour chercher les valeurs de la list sur notre bar de recherche et les afficher {onClick, onChange etc}
     const onChange = (list) => {
         setSearch(list.target.search)
     }
-   // .toLowerCase('')
     const onSearch= (searchTerm) => {
         setSearch(searchTerm);
     }
